@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-8 col-lg-offset-2">
+                <h2>添加紀錄</h2>
+                <hr>
+                <form action="/account" method="post">
+                    <div>
+                        <div class="form-group">
+                            <label for="item">事項</label>
+                            <div>
+                                <input 
+                                 type="text"
+                                 name="what"
+                                 class="form-control"
+                                 id="item">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">時間</label>
+                            <div>
+                                <input 
+                                 type="date"
+                                 name="time"
+                                 class="form-control"
+                                 id="item">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">類型</label>
+                            <div>
+                                <select name="type" id="1" class="form-control">
+                                    <label for="type">類型</label>
+                                    <option value="-1">支出</option>
+                                    <option value="1">收入</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>金額</div>
+                            <div><input type="text" name="much" class="form-control"></div>
+                        </div>
+                    </div>
+                    <div >
+                        <button type="submit" class="btn btn-primary btn block">添加</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
